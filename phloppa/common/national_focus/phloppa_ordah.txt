@@ -1,0 +1,105 @@
+﻿focus_tree = {
+	id = phloppa_ordah
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = PHL
+		}
+
+		#modifier = {
+		#	add = 10
+		#	original_tag = PHL
+		#}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+	
+	focus = {
+		id = phloppa_establishment
+		icon = GFX_goal_phloppa_establishment
+		x = 10
+		y = 0
+		#relative_position_id = AST_empower_the_workers
+		available = {
+			NOT = { is_in_faction_with = SOV }
+		}
+		bypass = {
+
+		}
+		
+		cost = 1
+		#prerequisite = { focus = AST_workers_paradise }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			}
+		ai_will_do = {
+		}
+	}
+	
+	
+	focus = {
+		id = phloppa_rise
+		icon = GFX_goal_phloppa_establishment
+		x = 0
+		y = 1
+		relative_position_id = phloppa_establishment
+		available = {
+			NOT = { is_in_faction_with = SOV }
+		}
+		bypass = {
+
+		}
+		
+		cost = 1
+		prerequisite = { focus = phloppa_establishment }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = 100000
+		}
+		
+		ai_will_do = {
+		}
+	}
+
+	
+	focus = {
+		id = phloppa_established
+		icon = GFX_goal_phloppa_establishment
+		x = 0
+		y = 1
+		relative_position_id = phloppa_rise
+		available = {
+		NOT = { is_in_faction_with = SOV }
+		}
+		bypass = {
+			
+		}
+		cost = 1
+		prerequisite = { focus = phloppa_rise }
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_offsite_building = {type = arms_factory level = 1 }
+			add_offsite_building = {type = arms_factory level = 1 }
+		}
+		ai_will_do = {
+		}
+	}
+}	

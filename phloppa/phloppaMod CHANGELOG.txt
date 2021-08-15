@@ -1,0 +1,14 @@
+PhloppaMod CHANGELOG
+
+V0.1
+
+-Creation of MOD
+
+****************
+Added:
+-New Phloppa country 
+-4 country Leaders [Neutral, Democratic, Fascist, Communist]
+-3 Initial Focuses [Alpha]
+-2 Democratic branch focuses [Alpha]
+-Flags for Neutral, Democratic, Fascist
+-Localisation for Focuses

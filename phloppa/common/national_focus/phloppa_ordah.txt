@@ -102,4 +102,64 @@
 		ai_will_do = {
 		}
 	}
+	
+	focus = {
+        id = the_united_caracals
+        icon = GFX_goal_phloppa_establishment #placeholder
+        x = 0
+        y = 1
+        relative_position_id = phloppa_established
+        available = {
+        }
+        bypass = {
+        }
+        cost = 10
+        prerequisite = { focus = phloppa_established }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            add_political_power = 150
+            set_building_level = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+                province = 583
+            }
+			democratic_drift = 0.05
+			add_stability = 0.05
+        }
+        ai_will_do = {
+        }
+    }
+	
+    focus = {
+        id = democratic_rise
+        icon = GFX_goal_phloppa_establishment #placeholder
+        x = 0
+        y = 1
+        relative_position_id = the_united_caracals
+        available = {
+            has_stability > 0.5 #stabilnosc na poziomie 50%
+        }
+        bypass = {
+        }
+        cost = 10
+        prerequisite = { focus = the_united_caracals }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no    
+
+        completion_reward = {
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.2 #wzrost poparcia dla demokracji o 20%
+            }
+        }
+        ai_will_do = {
+        }
+    }
 }	

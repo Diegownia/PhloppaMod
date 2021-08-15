@@ -71,13 +71,44 @@ set_popularities = {
 	democratic = 30
 }
 
-# Mohammad Hashim Khan (Prime Minister) other potential candidate
+
 create_country_leader = {
 	name = "Phloppa Gregory"
 	desc = "POLITICS_MOHAMMED_ZAHIR_SHAH_DESC"
 	picture = "Phloppa_portrait.dds"
 	expire = "1965.1.1"
 	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Mr. President Gregory"
+	desc = "PRESIDENT_GREGORY"
+	picture = "Phloppa_portrait_democratic.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Gregory the Great"
+	desc = "GREGORY_THE_GREAT"
+	picture = "Phloppa_portrait_communist.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Gregory Phloppler"
+	desc = "GREGORY_PHLOPPLER"
+	picture = "Phloppa_portrait_fascist.dds"
+	expire = "1965.1.1"
+	ideology = rexism
 	traits = {
 		#
 	}

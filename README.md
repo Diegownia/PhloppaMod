@@ -2,7 +2,7 @@
 
 # Currently on hiatus due to the lack of time
 
-## Plans for te future releases:
+## Plans for the future releases:
 > - Democratic tree
 > - Neutral tree
 > - Economy tree
